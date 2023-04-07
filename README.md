@@ -1,4 +1,4 @@
-# Lore_of_League
+# Lore of League
 <p align="center">
 League of Legends Quiz Game
 
