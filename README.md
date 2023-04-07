@@ -2,8 +2,12 @@
 <p align="center">
 League of Legends Quiz Game
 </p>
+
 <p align="center">
 ![lol1](https://user-images.githubusercontent.com/82179486/230604412-5d615d63-cc16-4b1f-9195-b1e6e5f54b2f.png)
+</p>
+<p align="center">
+  <img width="460" height="300" src="![lol1](https://user-images.githubusercontent.com/82179486/230604412-5d615d63-cc16-4b1f-9195-b1e6e5f54b2f.png)">
 </p>
 ![lol2](https://user-images.githubusercontent.com/82179486/230604413-1c3b6f6f-81a4-4c62-8510-7356bbaf5e4c.png)
 ![lol3](https://user-images.githubusercontent.com/82179486/230604417-c6a05858-8042-4002-9298-f2f195ea82c3.png)
