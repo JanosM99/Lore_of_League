@@ -1,0 +1,1202 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!29 &1
+OcclusionCullingSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_OcclusionBakeSettings:
+    smallestOccluder: 5
+    smallestHole: 0.25
+    backfaceThreshold: 100
+  m_SceneGUID: 00000000000000000000000000000000
+  m_OcclusionCullingData: {fileID: 0}
+--- !u!104 &2
+RenderSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 9
+  m_Fog: 0
+  m_FogColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  m_FogMode: 3
+  m_FogDensity: 0.01
+  m_LinearFogStart: 0
+  m_LinearFogEnd: 300
+  m_AmbientSkyColor: {r: 0.212, g: 0.227, b: 0.259, a: 1}
+  m_AmbientEquatorColor: {r: 0.114, g: 0.125, b: 0.133, a: 1}
+  m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
+  m_AmbientIntensity: 1
+  m_AmbientMode: 3
+  m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
+  m_SkyboxMaterial: {fileID: 0}
+  m_HaloStrength: 0.5
+  m_FlareStrength: 1
+  m_FlareFadeSpeed: 3
+  m_HaloTexture: {fileID: 0}
+  m_SpotCookie: {fileID: 10001, guid: 0000000000000000e000000000000000, type: 0}
+  m_DefaultReflectionMode: 0
+  m_DefaultReflectionResolution: 128
+  m_ReflectionBounces: 1
+  m_ReflectionIntensity: 1
+  m_CustomReflection: {fileID: 0}
+  m_Sun: {fileID: 0}
+  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
+  m_UseRadianceAmbientProbe: 0
+--- !u!157 &3
+LightmapSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 11
+  m_GIWorkflowMode: 1
+  m_GISettings:
+    serializedVersion: 2
+    m_BounceScale: 1
+    m_IndirectOutputScale: 1
+    m_AlbedoBoost: 1
+    m_EnvironmentLightingMode: 0
+    m_EnableBakedLightmaps: 0
+    m_EnableRealtimeLightmaps: 0
+  m_LightmapEditorSettings:
+    serializedVersion: 10
+    m_Resolution: 2
+    m_BakeResolution: 40
+    m_AtlasSize: 1024
+    m_AO: 0
+    m_AOMaxDistance: 1
+    m_CompAOExponent: 1
+    m_CompAOExponentDirect: 0
+    m_Padding: 2
+    m_LightmapParameters: {fileID: 0}
+    m_LightmapsBakeMode: 1
+    m_TextureCompression: 1
+    m_FinalGather: 0
+    m_FinalGatherFiltering: 1
+    m_FinalGatherRayCount: 256
+    m_ReflectionCompression: 2
+    m_MixedBakeMode: 2
+    m_BakeBackend: 0
+    m_PVRSampling: 1
+    m_PVRDirectSampleCount: 32
+    m_PVRSampleCount: 500
+    m_PVRBounces: 2
+    m_PVRFilterTypeDirect: 0
+    m_PVRFilterTypeIndirect: 0
+    m_PVRFilterTypeAO: 0
+    m_PVRFilteringMode: 1
+    m_PVRCulling: 1
+    m_PVRFilteringGaussRadiusDirect: 1
+    m_PVRFilteringGaussRadiusIndirect: 5
+    m_PVRFilteringGaussRadiusAO: 2
+    m_PVRFilteringAtrousPositionSigmaDirect: 0.5
+    m_PVRFilteringAtrousPositionSigmaIndirect: 2
+    m_PVRFilteringAtrousPositionSigmaAO: 1
+    m_ShowResolutionOverlay: 1
+  m_LightingDataAsset: {fileID: 0}
+  m_UseShadowmask: 1
+--- !u!196 &4
+NavMeshSettings:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_BuildSettings:
+    serializedVersion: 2
+    agentTypeID: 0
+    agentRadius: 0.5
+    agentHeight: 2
+    agentSlope: 45
+    agentClimb: 0.4
+    ledgeDropHeight: 0
+    maxJumpAcrossDistance: 0
+    minRegionArea: 2
+    manualCellSize: 0
+    cellSize: 0.16666667
+    manualTileSize: 0
+    tileSize: 256
+    accuratePlacement: 0
+    debug:
+      m_Flags: 0
+  m_NavMeshData: {fileID: 0}
+--- !u!1 &350641926
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 350641928}
+  - component: {fileID: 350641927}
+  m_Layer: 0
+  m_Name: DataController
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &350641927
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 350641926}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da2073b2ae47c0d4cbee2e16d47cbcd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  allRoundData:
+  - name: English
+    timeLimitInSecond: 60
+    pointsAddedForCorrectAnswer: 10
+    questions:
+    - questionText: What are the two things,what Corki loves more than anything?
+      hint: Flying and his mustache.
+      category: BANDLE CITY
+      answers:
+      - answerText: Flying and his mustache
+        isCorrect: 1
+      - answerText: Flying and bombs
+        isCorrect: 0
+      - answerText: Machines and bombs
+        isCorrect: 0
+    - questionText: Who said? - "Death from above"
+      hint: Corki
+      category: BANDLE CITY
+      answers:
+      - answerText: Corki
+        isCorrect: 1
+      - answerText: Tristana
+        isCorrect: 0
+      - answerText: Rumble
+        isCorrect: 0
+    - questionText: Who is the leader of the Screaming Yipsnakes?
+      hint: Corki
+      category: BANDLE CITY
+      answers:
+      - answerText: Miss Fortune
+        isCorrect: 0
+      - answerText: Corki
+        isCorrect: 1
+      - answerText: Cassiopeia
+        isCorrect: 0
+    - questionText: What is Corki?
+      hint: He is a senior.
+      category: BANDLE CITY
+      answers:
+      - answerText: Young
+        isCorrect: 0
+      - answerText: Adult
+        isCorrect: 0
+      - answerText: Senior
+        isCorrect: 1
+    - questionText: Lulu is a yordle mage.
+      hint: True!
+      category: BANDLE CITY
+      answers:
+      - answerText: True
+        isCorrect: 1
+      - answerText: False
+        isCorrect: 0
+    - questionText: What's the name of Lulu's companion?
+      hint: The name of Lulu's companion is Pix
+      category: BANDLE CITY
+      answers:
+      - answerText: Pix
+        isCorrect: 1
+      - answerText: Luin
+        isCorrect: 0
+      - answerText: Trix
+        isCorrect: 0
+      - answerText: Laen
+        isCorrect: 0
+    - questionText: Lulu has been in the Spirit Realm
+      hint: True!
+      category: BANDLE CITY
+      answers:
+      - answerText: True
+        isCorrect: 1
+      - answerText: False
+        isCorrect: 0
+    - questionText: Rumble didn't want to be one of Heimerdinger's esteemed proteges
+      hint: True.
+      category: BANDLE CITY
+      answers:
+      - answerText: True
+        isCorrect: 1
+      - answerText: False
+        isCorrect: 0
+    - questionText: Rumble has a degree on the Yordle Academy of Science and Progress
+      hint: True!
+      category: BANDLE CITY
+      answers:
+      - answerText: False
+        isCorrect: 0
+      - answerText: True
+        isCorrect: 1
+    - questionText: Who has a special blowgun?
+      hint: Teemo
+      category: BANDLE CITY
+      answers:
+      - answerText: Amumu
+        isCorrect: 0
+      - answerText: Teemo
+        isCorrect: 1
+      - answerText: Yasuo
+        isCorrect: 0
+      - answerText: Kled
+        isCorrect: 0
+    - questionText: Which poison uses Teemo to his blowgun?
+      hint: a rare ajunta poison
+      category: BANDLE CITY
+      answers:
+      - answerText: A rare snake poison
+        isCorrect: 0
+      - answerText: A rare poison from Noxus
+        isCorrect: 0
+      - answerText: A rare ajunta poison
+        isCorrect: 1
+    - questionText: Where can we find Teemo's poison?
+      hint: In the jungles of Kumungu
+      category: BANDLE CITY
+      answers:
+      - answerText: In the jungles of the Serpent Isles
+        isCorrect: 0
+      - answerText: In Bandle City
+        isCorrect: 0
+      - answerText: In the jungles of Kumungu
+        isCorrect: 1
+    - questionText: Who said? -"Teemo rides a thin line between chipper compatriot
+        and unrepentant killer,but there's no one else I'd rather have as a friend."
+      hint: Tristana
+      category: BANDLE CITY
+      answers:
+      - answerText: Yummi
+        isCorrect: 0
+      - answerText: Tristana
+        isCorrect: 1
+      - answerText: Lulu
+        isCorrect: 0
+    - questionText: Who dedicated herself to become the guardian of all bandlewoods,
+        and her fellow yordles?
+      hint: Tristana
+      category: BANDLE CITY
+      answers:
+      - answerText: Tristana
+        isCorrect: 1
+      - answerText: Yummi
+        isCorrect: 0
+      - answerText: Lulu
+        isCorrect: 0
+    - questionText: 'Who has the weapon : Boomer?'
+      hint: Tristana
+      category: BANDLE CITY
+      answers:
+      - answerText: Gangplank
+        isCorrect: 0
+      - answerText: Tristana
+        isCorrect: 1
+      - answerText: Miss Fortune
+        isCorrect: 0
+      - answerText: Corki
+        isCorrect: 0
+    - questionText: Who was kidnapped by Mordekaiser?
+      hint: Veigar
+      category: BANDLE CITY
+      answers:
+      - answerText: Karthus
+        isCorrect: 0
+      - answerText: Kalista
+        isCorrect: 0
+      - answerText: Veigar
+        isCorrect: 1
+      - answerText: Malzahar
+        isCorrect: 0
+    - questionText: What's the name of Yummi's owner?
+      hint: Norra, a yordle witch
+      category: BANDLE CITY
+      answers:
+      - answerText: Norra
+        isCorrect: 1
+      - answerText: Theo
+        isCorrect: 0
+      - answerText: Chloe
+        isCorrect: 0
+    - questionText: Who helps Yummi to rescue Norra?
+      hint: Book
+      category: BANDLE CITY
+      answers:
+      - answerText: Book
+        isCorrect: 1
+      - answerText: A mouse
+        isCorrect: 0
+      - answerText: The eastern star
+        isCorrect: 0
+    - questionText: Who destroyed the City of Fizz?
+      hint: 'Gigalodons '
+      category: BILGEWATER
+      answers:
+      - answerText: Sharks
+        isCorrect: 0
+      - answerText: Rays
+        isCorrect: 0
+      - answerText: Dragons
+        isCorrect: 0
+      - answerText: Gigalodons
+        isCorrect: 1
+    - questionText: Who was the king of Bilgewater?
+      hint: Gangplank
+      category: BILGEWATER
+      answers:
+      - answerText: Gangplank
+        isCorrect: 1
+      - answerText: Miss Fortune
+        isCorrect: 0
+      - answerText: Graves
+        isCorrect: 0
+    - questionText: How sounds Graves entire name?
+      hint: Malcolm Graves
+      category: BILGEWATER
+      answers:
+      - answerText: Sharon Graves
+        isCorrect: 0
+      - answerText: Malcolm Graves
+        isCorrect: 1
+      - answerText: Edwards Graves
+        isCorrect: 0
+    - questionText: What is the name of Graves' double-barreled shotgun?
+      hint: Destiny
+      category: BILGEWATER
+      answers:
+      - answerText: Destiny
+        isCorrect: 1
+      - answerText: Boomer
+        isCorrect: 0
+      - answerText: Chalicar
+        isCorrect: 0
+    - questionText: Graves and Twisted Fate are only thieves ever to crack the supposedly
+        impenetrable Clockwork Vault.
+      hint: True!
+      category: BILGEWATER
+      answers:
+      - answerText: True
+        isCorrect: 1
+      - answerText: False
+        isCorrect: 0
+    - questionText: Who's the brother in arms of Graves?
+      hint: Twisted Fate.
+      category: BILGEWATER
+      answers:
+      - answerText: Twisted Fate
+        isCorrect: 1
+      - answerText: Gangplank
+        isCorrect: 0
+      - answerText: Darius
+        isCorrect: 0
+      - answerText: Pyke
+        isCorrect: 0
+    - questionText: Which religion does Illaoi follow?
+      hint: Nagakabouros
+      category: BILGEWATER
+      answers:
+      - answerText: 'Nagakabouros '
+        isCorrect: 1
+      - answerText: Old Gods
+        isCorrect: 0
+      - answerText: Bokononism
+        isCorrect: 0
+      - answerText: Chaos Gods
+        isCorrect: 0
+    - questionText: Who was Illaoi's love?
+      hint: Gangplank
+      category: BILGEWATER
+      answers:
+      - answerText: Gangplank
+        isCorrect: 1
+      - answerText: Graves
+        isCorrect: 0
+    - questionText: 'Illaoi has two missions: to fight against undeath and to support
+        the Black Mist'
+      hint: False,to fight against undeath and to drive the Black Mist back.
+      category: BILGEWATER
+      answers:
+      - answerText: True
+        isCorrect: 0
+      - answerText: False
+        isCorrect: 1
+    - questionText: Who murdered the family of Miss Fortune?
+      hint: Gangplank
+      category: BILGEWATER
+      answers:
+      - answerText: Zed
+        isCorrect: 0
+      - answerText: Illaoi
+        isCorrect: 0
+      - answerText: Gangplank
+        isCorrect: 1
+      - answerText: Graves
+        isCorrect: 0
+    - questionText: How to got even Miss Fortune with Gangplank?
+      hint: blew up his flagship.
+      category: BILGEWATER
+      answers:
+      - answerText: blew up his flagship
+        isCorrect: 1
+      - answerText: shot him down
+        isCorrect: 0
+    - questionText: How sounds Miss Fortune entire name?
+      hint: Sarah Fortune
+      category: BILGEWATER
+      answers:
+      - answerText: Sarah Fortune
+        isCorrect: 1
+      - answerText: Lili Fortune
+        isCorrect: 0
+      - answerText: Abigale Fortune
+        isCorrect: 0
+    - questionText: Miss Fortune's mother was Abigale Fortune,a renowned gun-dame.
+      hint: True!
+      category: BILGEWATER
+      answers:
+      - answerText: True
+        isCorrect: 1
+      - answerText: False
+        isCorrect: 0
+    - questionText: Nautilus was the best salvage diver in Noxus.
+      hint: He was the best salvage diver in Bilgewater.
+      category: BILGEWATER
+      answers:
+      - answerText: True
+        isCorrect: 0
+      - answerText: False
+        isCorrect: 1
+    - questionText: Tahm Kench is a ___ .
+      hint: Demon
+      category: BILGEWATER
+      answers:
+      - answerText: Frog
+        isCorrect: 0
+      - answerText: Fish
+        isCorrect: 0
+      - answerText: Demon
+        isCorrect: 1
+    - questionText: Who's the River King?
+      hint: Tahm Kench
+      category: BILGEWATER
+      answers:
+      - answerText: Tahm Kench
+        isCorrect: 1
+      - answerText: Pyke
+        isCorrect: 0
+      - answerText: Fizz
+        isCorrect: 0
+    - questionText: 'Who has the nickname : Two-Coats?'
+      hint: Tahm Kench,because he wears two fine jackets stitched together.
+      category: BILGEWATER
+      answers:
+      - answerText: Nautilus
+        isCorrect: 0
+      - answerText: Olaf
+        isCorrect: 0
+      - answerText: Tahm Kench
+        isCorrect: 1
+    - questionText: Who's real name is Tobias Foxtrot?
+      hint: Twisted Fate
+      category: BILGEWATER
+      answers:
+      - answerText: Nautilus
+        isCorrect: 0
+      - answerText: Graves
+        isCorrect: 0
+      - answerText: Gangplank
+        isCorrect: 0
+      - answerText: Twisted Fate
+        isCorrect: 1
+    - questionText: Twisted Fate was born to the nomadic river folk of the Serpentine
+        Delta.
+      hint: True!
+      category: BILGEWATER
+      answers:
+      - answerText: True
+        isCorrect: 1
+      - answerText: False
+        isCorrect: 0
+    - questionText: What was the walls of Demacia built from?
+      hint: Petricite
+      category: DEMACIA
+      answers:
+      - answerText: Petricite
+        isCorrect: 1
+      - answerText: Stone
+        isCorrect: 0
+      - answerText: Silver
+        isCorrect: 0
+    - questionText: Who helped Sylas in the prison?
+      hint: Luxanna [Lux]
+      category: DEMACIA
+      answers:
+      - answerText: Luxanna
+        isCorrect: 1
+      - answerText: Garen
+        isCorrect: 0
+      - answerText: Fiora
+        isCorrect: 0
+      - answerText: Kayle
+        isCorrect: 0
+    - questionText: Who are siblings?
+      hint: Lux and Garen
+      category: DEMACIA
+      answers:
+      - answerText: Aphelios and Alune
+        isCorrect: 0
+      - answerText: Lucian and Senna
+        isCorrect: 0
+      - answerText: Lux and Garen
+        isCorrect: 1
+    - questionText: Who belongs to the Crownguard family?
+      hint: Garen
+      category: DEMACIA
+      answers:
+      - answerText: Poppy
+        isCorrect: 0
+      - answerText: Jarvan IV
+        isCorrect: 0
+      - answerText: Garen
+        isCorrect: 1
+      - answerText: Fiora
+        isCorrect: 0
+    - questionText: What's the name of Garen's father?
+      hint: Pieter
+      category: DEMACIA
+      answers:
+      - answerText: Alfred
+        isCorrect: 0
+      - answerText: Pieter
+        isCorrect: 1
+      - answerText: Bradley
+        isCorrect: 0
+      - answerText: Charles
+        isCorrect: 0
+    - questionText: What's Garen's biggest fear?
+      hint: His sister's magic
+      category: DEMACIA
+      answers:
+      - answerText: War in Demacia
+        isCorrect: 0
+      - answerText: His sister's magic
+        isCorrect: 1
+      - answerText: Death
+        isCorrect: 0
+      - answerText: Growing old
+        isCorrect: 0
+    - questionText: Which instrument does Sona play?
+      hint: Stringed instrument
+      category: DEMACIA
+      answers:
+      - answerText: Wind instrument
+        isCorrect: 0
+      - answerText: Percussion instrument
+        isCorrect: 0
+      - answerText: Stringed instrument
+        isCorrect: 1
+    - questionText: Sona grew up in an orphanage.
+      hint: True!
+      category: DEMACIA
+      answers:
+      - answerText: True
+        isCorrect: 1
+      - answerText: False
+        isCorrect: 0
+    - questionText: Sona talks and sings too much.
+      hint: False! She is silent.
+      category: DEMACIA
+      answers:
+      - answerText: True
+        isCorrect: 0
+      - answerText: False
+        isCorrect: 1
+    - questionText: How sounds the entire name of Lux?
+      hint: Luxanna Crownguard
+      category: DEMACIA
+      answers:
+      - answerText: Luxxarianna Crownguard
+        isCorrect: 0
+      - answerText: Luxanna Crownguard
+        isCorrect: 1
+      - answerText: Luxx Crownguard
+        isCorrect: 0
+    - questionText: What's the name of Lux's horse?
+      hint: Starfire
+      category: DEMACIA
+      answers:
+      - answerText: Ozzie
+        isCorrect: 0
+      - answerText: Starfire
+        isCorrect: 1
+      - answerText: Twilight
+        isCorrect: 0
+    - questionText: In Demacia os the magic forbidden.
+      hint: True!
+      category: DEMACIA
+      answers:
+      - answerText: True
+        isCorrect: 1
+      - answerText: False
+        isCorrect: 0
+    - questionText: What's Illaoi's title in her religion?
+      hint: The Truth Bearer
+      category: BILGEWATER
+      answers:
+      - answerText: The Truth Bearer
+        isCorrect: 1
+      - answerText: The Kraken Priestess
+        isCorrect: 0
+      - answerText: The Hierophant
+        isCorrect: 0
+    - questionText: What's the name of the ship,which shipboard Pyke served?
+      hint: Terror
+      category: BILGEWATER
+      answers:
+      - answerText: Pyke
+        isCorrect: 0
+      - answerText: Beke Nidd
+        isCorrect: 0
+      - answerText: Terror
+        isCorrect: 1
+  - name: Hungary
+    timeLimitInSecond: 60
+    pointsAddedForCorrectAnswer: 10
+    questions:
+    - questionText: "Mi az a k\xE9t dolog amit Corki mindenn\xE9l jobban szeret?"
+      hint: "A rep\xFCl\xE9s \xE9s a bajusza."
+      category: BANDLE CITY
+      answers:
+      - answerText: "A rep\xFCl\xE9s \xE9s a bajusza."
+        isCorrect: 1
+      - answerText: "A rep\xFCl\xE9s \xE9s a bomb\xE1k."
+        isCorrect: 0
+      - answerText: "A g\xE9pek \xE9s a bomb\xE1k."
+        isCorrect: 0
+    - questionText: "Ki mondta? - \"Az \xE9gb\u0151l les\xFAjt\xF3 hal\xE1l\""
+      hint: Corki
+      category: BANDLE CITY
+      answers:
+      - answerText: Corki
+        isCorrect: 1
+      - answerText: Tristana
+        isCorrect: 0
+      - answerText: Rumble
+        isCorrect: 0
+    - questionText: "Ki a \"Screaming Yipsnakes\" vezet\u0151je? "
+      hint: Corki
+      category: BANDLE CITY
+      answers:
+      - answerText: Miss Fortune
+        isCorrect: 0
+      - answerText: Corki
+        isCorrect: 1
+      - answerText: Cassiopeia
+        isCorrect: 0
+    - questionText: Milyen korcsoportba tartozik Corki?
+      hint: "Id\u0151s"
+      category: BANDLE CITY
+      answers:
+      - answerText: "Id\u0151s"
+        isCorrect: 1
+      - answerText: Fiatal
+        isCorrect: 0
+      - answerText: "Feln\u0151tt"
+        isCorrect: 0
+    - questionText: "Lulu egy yordlei m\xE1gus."
+      hint: Igaz!
+      category: BANDLE CITY
+      answers:
+      - answerText: Igaz
+        isCorrect: 1
+      - answerText: Hamis
+        isCorrect: 0
+    - questionText: "Mi Lulu t\xE1rs\xE1nak a neve?"
+      hint: Pix
+      category: BANDLE CITY
+      answers:
+      - answerText: Pix
+        isCorrect: 1
+      - answerText: Luin
+        isCorrect: 0
+      - answerText: Trix
+        isCorrect: 0
+      - answerText: Laen
+        isCorrect: 0
+    - questionText: "Lulu m\xE1r j\xE1rt a szellemvil\xE1gban. "
+      hint: Igaz!
+      category: BANDLE CITY
+      answers:
+      - answerText: Igaz
+        isCorrect: 1
+      - answerText: Hamis
+        isCorrect: 0
+    - questionText: "Rumble nem akart Heimerdinger egyik nagyra becs\xFClt v\xE9dence
+        lenni."
+      hint: Igaz!
+      category: BANDLE CITY
+      answers:
+      - answerText: Igaz
+        isCorrect: 1
+      - answerText: Hamis
+        isCorrect: 0
+    - questionText: "Rumblenak van egy diplom\xE1ja a Yordle Tudom\xE1nyos Akad\xE9mi\xE1n."
+      hint: Igaz!
+      category: BANDLE CITY
+      answers:
+      - answerText: True
+        isCorrect: 1
+      - answerText: False
+        isCorrect: 0
+    - questionText: "Kinek van egy k\xFCl\xF6nleges f\xFAv\xF3cs\xF6ve?"
+      hint: Teemo-nak
+      category: BANDLE CITY
+      answers:
+      - answerText: Amumu
+        isCorrect: 0
+      - answerText: Teemo
+        isCorrect: 1
+      - answerText: Yasuo
+        isCorrect: 0
+      - answerText: Kled
+        isCorrect: 0
+    - questionText: "Milyen m\xE9rget haszn\xE1l Teemo a f\xFAv\xF3cs\xF6v\xE9hez?"
+      hint: "Egy ritka ajuntai m\xE9rget"
+      category: BANDLE CITY
+      answers:
+      - answerText: "Egy ritka k\xEDgy\xF3m\xE9rget"
+        isCorrect: 0
+      - answerText: "Egy ritka ajuntai m\xE9rget"
+        isCorrect: 1
+      - answerText: "Egy ritka m\xE9rget Noxusb\xF3l"
+        isCorrect: 0
+    - questionText: "Ki mondta? - \"Teemo v\xE9kony j\xE9gen t\xE1ncol egy \xE9l\xE9nk
+        honfit\xE1rs \xE9s egy meg\xE1talkodott gyilkos k\xF6z\xF6tt,de nincs m\xE1s,akit
+        jobban szeretn\xE9k mint bar\xE1t.\""
+      hint: Tristana
+      category: BANDLE CITY
+      answers:
+      - answerText: Yummi
+        isCorrect: 0
+      - answerText: Tristana
+        isCorrect: 1
+      - answerText: Lulu
+        isCorrect: 0
+    - questionText: "Hol tal\xE1lhat\xF3 Teemo m\xE9rge?"
+      hint: "Kumungu dzsungel\xE9ben"
+      category: BANDLE CITY
+      answers:
+      - answerText: "A kigy\xF3k sziget\xE9k dzsungel\xE9ben"
+        isCorrect: 0
+      - answerText: Bandle City-ben
+        isCorrect: 0
+      - answerText: "Kumungu dzsungel\xE9ben"
+        isCorrect: 1
+    - questionText: "Ki sz\xE1nta el mag\xE1t arra,hogy Bandlewoods \xE9s a jordok
+        v\xE9delmez\u0151je lesz?"
+      hint: Tristana
+      category: BANDLE CITY
+      answers:
+      - answerText: Tristana
+        isCorrect: 1
+      - answerText: Yummi
+        isCorrect: 0
+      - answerText: Lulu
+        isCorrect: 0
+    - questionText: "Kihez tartozik a Boomer nevezet\u0171 fegyver?"
+      hint: Tristana
+      category: BANDLE CITY
+      answers:
+      - answerText: Gangplank
+        isCorrect: 0
+      - answerText: Tristana
+        isCorrect: 1
+      - answerText: Miss Fortune
+        isCorrect: 0
+      - answerText: Corki
+        isCorrect: 0
+    - questionText: Kit rabolt el Mordekaiser?
+      hint: Veigar-t
+      category: BANDLE CITY
+      answers:
+      - answerText: Karthus
+        isCorrect: 0
+      - answerText: Kalista
+        isCorrect: 0
+      - answerText: Veigar
+        isCorrect: 1
+      - answerText: Malzahar
+        isCorrect: 0
+    - questionText: "Hogy h\xEDvj\xE1k Yummi gazd\xE1j\xE1t?"
+      hint: "Norra,egy yordle boszork\xE1ny"
+      category: BANDLE CITY
+      answers:
+      - answerText: Norra
+        isCorrect: 1
+      - answerText: Theo
+        isCorrect: 0
+      - answerText: Cloe
+        isCorrect: 0
+    - questionText: "Ki seg\xEDt Yummi-nak,hogy megmentse Norra-t?"
+      hint: "K\xF6nyv"
+      category: BANDLE CITY
+      answers:
+      - answerText: "K\xF6nyv"
+        isCorrect: 1
+      - answerText: "Egy eg\xE9r"
+        isCorrect: 0
+      - answerText: A keleti csillag
+        isCorrect: 0
+    - questionText: "Kik rombolt\xE1k le Fizz v\xE1ros\xE1t?"
+      hint: A gigalodonok
+      category: BILGEWATER
+      answers:
+      - answerText: "C\xE1p\xE1k"
+        isCorrect: 0
+      - answerText: "R\xE1j\xE1k"
+        isCorrect: 0
+      - answerText: Gigalodonok
+        isCorrect: 1
+      - answerText: "S\xE1rk\xE1nyok"
+        isCorrect: 0
+    - questionText: "Ki volt Bilgewater kir\xE1lya?"
+      hint: Gangplank
+      category: BILGEWATER
+      answers:
+      - answerText: Gangplank
+        isCorrect: 1
+      - answerText: Miss Fortune
+        isCorrect: 0
+      - answerText: Graves
+        isCorrect: 0
+    - questionText: Hogy hangzik Graves teljes neve?
+      hint: Malcolm Graves
+      category: BILGEWATER
+      answers:
+      - answerText: Sharon Graves
+        isCorrect: 0
+      - answerText: Malcolm Graves
+        isCorrect: 1
+      - answerText: Edwards Graves
+        isCorrect: 0
+    - questionText: "Hogy h\xEDvj\xE1k Graves s\xF6r\xE9tes pusk\xE1j\xE1t?"
+      hint: "V\xE9gzet (Destiny)"
+      category: BILGEWATER
+      answers:
+      - answerText: Chalicar
+        isCorrect: 0
+      - answerText: Destiny
+        isCorrect: 1
+      - answerText: Boomer
+        isCorrect: 0
+    - questionText: "Graves \xE9s Twisted Fate m\xE1ig az egyetlenek,akik kirabolt\xE1k
+        a felt\xF6rhetetlen Clokework Vault-ot."
+      hint: Igaz!
+      category: BILGEWATER
+      answers:
+      - answerText: Igaz
+        isCorrect: 1
+      - answerText: Hamis
+        isCorrect: 0
+    - questionText: "Ki Graves bajt\xE1rsa?"
+      hint: Twisted Fate
+      category: BILGEWATER
+      answers:
+      - answerText: Twisted Fate
+        isCorrect: 1
+      - answerText: Gangplank
+        isCorrect: 0
+      - answerText: Pyke
+        isCorrect: 0
+      - answerText: Darius
+        isCorrect: 0
+    - questionText: Which religion does Illaoi follow?
+      hint: Nagakabouros
+      category: BILGEWATER
+      answers:
+      - answerText: Nagakabouros
+        isCorrect: 1
+      - answerText: "R\xE9gi Istenek(Old Gods)"
+        isCorrect: 0
+      - answerText: Bokononism
+        isCorrect: 0
+      - answerText: "K\xE1osz Istenei(Chaos Gods)"
+        isCorrect: 0
+    - questionText: Ki Illaoi szerelme?
+      hint: Gangplank
+      category: BILGEWATER
+      answers:
+      - answerText: Gangplank
+        isCorrect: 1
+      - answerText: Graves
+        isCorrect: 0
+    - questionText: "Illaoi-nak k\xE9t feladata van : harcolni az \xE9l\u0151halottak
+        ellen \xE9s t\xE1mogatni a Fekete K\xF6d\xF6t."
+      hint: "Hamis,harcolni az \xE9l\u0151halottak ellen \xE9s el\u0171zni a Fekete
+        K\xF6d\xF6t."
+      category: BILGEWATER
+      answers:
+      - answerText: Igaz
+        isCorrect: 0
+      - answerText: Hamis
+        isCorrect: 1
+    - questionText: "Ki \xF6lte meg Miss Fortune csal\xE1dj\xE1t?"
+      hint: Gangplank
+      category: BILGEWATER
+      answers:
+      - answerText: Zed
+        isCorrect: 0
+      - answerText: Illaoi
+        isCorrect: 0
+      - answerText: Gangplank
+        isCorrect: 1
+      - answerText: Graves
+        isCorrect: 0
+    - questionText: "Hogy \xE1llt bossz\xFAt Miss Fortune Gangplanken?"
+      hint: "Felrobbantotta a parancsnoki haj\xF3j\xE1t"
+      category: BILGEWATER
+      answers:
+      - answerText: "Karon l\u0151tte"
+        isCorrect: 0
+      - answerText: "Felrobbantotta a parancsnoki haj\xF3j\xE1t"
+        isCorrect: 0
+    - questionText: Hogy hangzik Miss Fortune teljes neve?
+      hint: Sarah Fortune
+      category: BILGEWATER
+      answers:
+      - answerText: Sarah Fortune
+        isCorrect: 1
+      - answerText: Lili Fortune
+        isCorrect: 0
+      - answerText: Abigale Fortune
+        isCorrect: 0
+    - questionText: "Miss Fortune \xE9desanyja Abigale Fortune,egy elismert fegyverk\xE9sz\xEDt\u0151."
+      hint: Igaz!
+      category: BILGEWATER
+      answers:
+      - answerText: Igaz
+        isCorrect: 1
+      - answerText: Hamis
+        isCorrect: 0
+    - questionText: "Nautilus volt a legjobb roncsb\xFAv\xE1r Noxus-ban."
+      hint: "Hamis,Bilgewater-ben volt a legjobb roncsb\xFAv\xE1r."
+      category: BILGEWATER
+      answers:
+      - answerText: Igaz
+        isCorrect: 0
+      - answerText: Hamis
+        isCorrect: 1
+    - questionText: Tahm Kench egy ___ .
+      hint: "D\xE9mon"
+      category: BILGEWATER
+      answers:
+      - answerText: "B\xE9ka"
+        isCorrect: 0
+      - answerText: Hal
+        isCorrect: 0
+      - answerText: "D\xE9mon"
+        isCorrect: 1
+    - questionText: "Ki a Foly\xF3 Kir\xE1ly?"
+      hint: Tahm Kench
+      category: BILGEWATER
+      answers:
+      - answerText: Tahm Kench
+        isCorrect: 1
+      - answerText: Pyke
+        isCorrect: 0
+      - answerText: Fizz
+        isCorrect: 0
+    - questionText: "Kinek a beceneve a Two-Coats(K\xE9tkab\xE1tos)?"
+      hint: "Tahm Kench-\xE9,mert k\xE9t \xF6sszevart kab\xE1tot hord."
+      category: BILGEWATER
+      answers:
+      - answerText: Nautilus
+        isCorrect: 0
+      - answerText: Olaf
+        isCorrect: 0
+      - answerText: Tahm Kench
+        isCorrect: 1
+    - questionText: "Ki val\xF3di neve Tobias Foxtrot?"
+      hint: Twisted Fate
+      category: BILGEWATER
+      answers:
+      - answerText: Nautilus
+        isCorrect: 0
+      - answerText: Graves
+        isCorrect: 0
+      - answerText: Gangplank
+        isCorrect: 0
+      - answerText: Twisted Fate
+        isCorrect: 1
+    - questionText: "Twisted Fate a kigy\xF3k\u0151-delta k\xF6rny\xE9k\xE9n \xE9l\u0151
+        nom\xE1d n\xE9p sz\xFCl\xF6tte."
+      hint: Igaz!
+      category: BILGEWATER
+      answers:
+      - answerText: Igaz
+        isCorrect: 1
+      - answerText: Hamis
+        isCorrect: 0
+    - questionText: "Mib\u0151l \xE9p\xFCltek Dem\xE1cia falai?"
+      hint: "Petricite-b\u0151l"
+      category: DEMACIA
+      answers:
+      - answerText: "K\u0151"
+        isCorrect: 0
+      - answerText: Petricite
+        isCorrect: 1
+      - answerText: "Ez\xFCst"
+        isCorrect: 0
+    - questionText: "Ki seg\xEDtett Sylas-nak a b\xF6rt\xF6nben?"
+      hint: Luxanna [Lux]
+      category: DEMACIA
+      answers:
+      - answerText: Luxanna
+        isCorrect: 1
+      - answerText: Garen
+        isCorrect: 0
+      - answerText: Fiora
+        isCorrect: 0
+      - answerText: Kayle
+        isCorrect: 0
+    - questionText: "Kik testv\xE9rek?"
+      hint: "Lux \xE9s Garen"
+      category: DEMACIA
+      answers:
+      - answerText: "Aphelios \xE9s Alune"
+        isCorrect: 0
+      - answerText: "Lux \xE9s Garen"
+        isCorrect: 1
+      - answerText: "Lucian \xE9s Senna"
+        isCorrect: 0
+    - questionText: "Ki tartozik a Crownguard csal\xE1dhoz?"
+      hint: Garen
+      category: DEMACIA
+      answers:
+      - answerText: Poppy
+        isCorrect: 0
+      - answerText: Jarvan IV
+        isCorrect: 0
+      - answerText: Garen
+        isCorrect: 1
+      - answerText: Fiora
+        isCorrect: 0
+    - questionText: "Hogy h\xEDvj\xE1k Garen \xE9desapj\xE1t?"
+      hint: Pieter
+      category: DEMACIA
+      answers:
+      - answerText: Alfred
+        isCorrect: 0
+      - answerText: Pieter
+        isCorrect: 1
+      - answerText: Bradley
+        isCorrect: 0
+      - answerText: Charles
+        isCorrect: 0
+    - questionText: "Mi Garen legnagyobb f\xE9lelme?"
+      hint: "A testv\xE9re m\xE1gi\xE1ja"
+      category: DEMACIA
+      answers:
+      - answerText: "H\xE1bor\xFA Dem\xE1ci\xE1ban"
+        isCorrect: 0
+      - answerText: "A testv\xE9re m\xE1gi\xE1ja"
+        isCorrect: 1
+      - answerText: "Hal\xE1l"
+        isCorrect: 0
+      - answerText: "\xD6regs\xE9g"
+        isCorrect: 0
+    - questionText: "Milyen hangszeren j\xE1tszik Sona?"
+      hint: "Sona h\xFAros hangszeren j\xE1tszik."
+      category: DEMACIA
+      answers:
+      - answerText: "F\xFAv\xF3s hangszer"
+        isCorrect: 0
+      - answerText: "H\xFAros hangszer"
+        isCorrect: 1
+      - answerText: "\xDCt\u0151s hangszer"
+        isCorrect: 0
+    - questionText: "Sona egy \xE1rvah\xE1zban n\u0151tt fel."
+      hint: Igaz!
+      category: DEMACIA
+      answers:
+      - answerText: Igaz
+        isCorrect: 1
+      - answerText: Hamis
+        isCorrect: 0
+    - questionText: "Sona nagyon sokat besz\xE9l \xE9s \xE9nekel."
+      hint: "Hamis,Sona n\xE9ma."
+      category: DEMACIA
+      answers:
+      - answerText: Igaz
+        isCorrect: 0
+      - answerText: Hamis
+        isCorrect: 1
+    - questionText: Mi a teljes neve Luxnak?
+      hint: Luxanna Crownguard
+      category: DEMACIA
+      answers:
+      - answerText: Luxxarianna Crownguard
+        isCorrect: 0
+      - answerText: Luxanna Crownguard
+        isCorrect: 1
+      - answerText: Luxx Crownguard
+        isCorrect: 0
+    - questionText: "Hogy h\xEDvj\xE1k Lux lov\xE1t?"
+      hint: Starfire
+      category: DEMACIA
+      answers:
+      - answerText: Ozzie
+        isCorrect: 0
+      - answerText: Starfire
+        isCorrect: 1
+      - answerText: Twilight
+        isCorrect: 0
+    - questionText: "Demaciaban a m\xE1gia tiltott."
+      hint: Igaz!
+      category: DEMACIA
+      answers:
+      - answerText: Igaz
+        isCorrect: 1
+      - answerText: Hamis
+        isCorrect: 0
+    - questionText: "Milyen c\xEDmet hordoz Illaoi a vall\xE1s\xE1ban?"
+      hint: The Truth Bearer
+      category: BILGEWATER
+      answers:
+      - answerText: The Truth Bearer
+        isCorrect: 1
+      - answerText: The Kraken Priestess
+        isCorrect: 0
+      - answerText: The Hierophant
+        isCorrect: 0
+    - questionText: "Mi annak a haj\xF3nak a neve,amelyik fed\xE9lzet\xE9n Pyke szolg\xE1lt?"
+      hint: Terror
+      category: BILGEWATER
+      answers:
+      - answerText: Beke Nidd
+        isCorrect: 0
+      - answerText: Pyke
+        isCorrect: 0
+      - answerText: Terror
+        isCorrect: 1
+  rankPoint: 0
+  currency: 0
+  language: 0
+  summonerSpell1: 1
+  summonerSpell2: 2
+  buddy: 0
+  buddypass: 0
+--- !u!4 &350641928
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 350641926}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 385.8473, y: 1352.5165, z: -10}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
