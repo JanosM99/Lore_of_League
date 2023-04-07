@@ -13,5 +13,5 @@ League of Legends Quiz Game
 
 
 <p align="center">
-  <img width="460" height="300" src="(https://user-images.githubusercontent.com/82179486/230604412-5d615d63-cc16-4b1f-9195-b1e6e5f54b2f.png">
+  <img width="460" height="300" src="![lol1](https://user-images.githubusercontent.com/82179486/230604412-5d615d63-cc16-4b1f-9195-b1e6e5f54b2f.png)">
 </p>
